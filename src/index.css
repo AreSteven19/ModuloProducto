@@ -1,13 +1,140 @@
-body {
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contenedor {
+  display: flex;
+  height: 100vh;
+}
+
+.izquierda,
+.derecha {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.izquierda {
+  flex: 1; 
+  background-color: #C5E0DC; 
+}
+
+.derecha {
+  flex: 2; 
+  background-color: #E08E79; 
+}
+
+.arriba,
+.abajo {
+  flex: 1;
+  width: 100%;
+}
+
+.arriba {
+  background-color: #e74c3c; 
+}
+
+.abajo {
+  background-color: #f39c12; 
+}
+
+
+
+
+.titulo  {
+  margin: 0; 
+  font-size: 32px; 
+  margin-left: 300px; 
+  margin-top: -80px;
+  color: #ECE5CE;
+}
+
+#de{
+  margin-left: 80px;
+}
+
+.fecha{
+  color: #ECE5CE;
+  
+
+}
+
+.fecha {
+  text-align: right; 
+  margin-right: 70px;
+
+}
+
+#imagen_fruta{
+  width: 370px; 
+  height: 370px;
+  margin-top: -60px;
+  margin-left: 230px;
+  
+}
+
+.titulo h1 {
+  margin-trim: 30px; 
+ 
+}
+
+#logos{
+ width: 300px; 
+margin-left: 30px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  
+  height: 300vh;
+  padding: 20px;
+  margin-left: -30px;
+  margin-top: -36px;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  background-color: #774F38;
+  color: #fff;
+  padding: 24px 80px; 
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
+  
+}
+
+.triangulo {
+  width: 0;
+  height: -20px;
+  border-top: 40px solid transparent; 
+  border-bottom: 30px solid transparent; 
+  border-left: 30px solid #774F38;
+  position: absolute;
+  right: -30px;
+}
+
+.botonp {
+  background-color: transparent;
+  border: none;
+  color: #F1D4AF;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 19px;
+}
+
+.botonp:hover {
+  color: #fff;
+  font-size: 20px;
+}
+
+#flecha{
+  width: 120px;
+  height:120px;
+  margin-top: -10px;
+  margin-left: 150px;
+  
 }
